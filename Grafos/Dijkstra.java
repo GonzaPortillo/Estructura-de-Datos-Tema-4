@@ -1,5 +1,3 @@
-//Implementacion en codigo de un grafo
-
 public class Dijkstra {
 
   public static void dijkstra(int[][] graph, int source) {
