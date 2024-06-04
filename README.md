@@ -133,63 +133,59 @@ Operaciones básicas:
     }
 ### Grafos (Algoritmo de Dijkstra)
 
-    import java.util.*;
-    public class DijkstraAlgorithm {
-        private static final int V = g;
+    public class Dijkstra {
 
-        private int minDistance(int[] dist, boolean[] visited) {
-            int min = Integer.MAX_VALUE;
-            int minIndex = -1;
-            for (int v = 0; v < V; v++) {
-                if (!visited[v] && dist[v] <= min) {
-                    min = dist[v];
-                    minIndex = v;
-                }
+      public static void dijkstra(int[][] graph, int source) {
+        int count = graph.length;
+        boolean[] visitedVerted = new boolean[count];
+        int[] distance = new int[count];
+        for (int i = 0; i < count; i++) {
+          visitedVertex[i] = false;
+          distance[i] = Integer.MAX_VALUE;
+        }
+
+        // La distancia del bucle automático es cero.
+        distance[source] = 0;
+        for (int i = 0; i < count; i++) {
+
+          // Update the distance between neighbouring vertex and source vertex
+          int u = findMinDistance(distance, visitedVertex);
+          visitedVertex[u] = true;
+
+          //Actualiza todas las distancias de los vértices vecinos.
+          for (int v = 0; v < count; v++) {
+            if (!visitedVertex[v] && graph[u][v] != 0 && (distance[u] + graph[u][v] < distance[v])) {
+              distance[v] = distance[u] + graph[u][v];
             }
-            return minIndex;
+          }
+        }
+        for (int i = 0; i < distance.length; i++) {
+          System.out.println(String.format("Distance from %s to %s is %s", source, i, distance[i]));
         }
 
-        private void printSolution(int[] dist) {
-            System.out.println("Distancia desde el origen a cada vértice:");
-            for (int i = 0; i < V; i++) {
-                System.out.println(i + ": " + dist[i]);
-            }
+      }
+
+      // Encontrar la distancia mínima
+      private static int DistanciaMinima(int[] distance, boolean[] visitedVertex) {
+        int minimadistancia = Integer.MAX_VALUE;
+        int distanciavertice = -1;
+        for (int i = 0; i < distance.length; i++) {
+          if (!visitedVertex[i] && distance[i] < minDistance) {
+            minimadistancia = distance[i];
+            distanciavertice = i;
+          }
         }
+        return minDistanceVertex;
+      }
 
-        private void dijkstra(int[][] graph, int src) {
-            int[] dist = new int[V];
-            boolean[] visited = new boolean[V];
-            Arrays.fill(dist, Integer.MAX_VALUE);
-
-            dist[src] = 0;
-            for (int count = 0; count < V - 1; count++) {
-                int u = minDistance(dist, visited);
-                visited[u] = true;
-                for (int v = 0; v < V; v++) {
-                    if (!visited[v] && graph[u][v] != 0 && dist[u] != Integer.MAX_VALUE && dist[u] + graph[u][v] < dist[v]) {
-                        dist[v] = dist[u] + graph[u][v];
-                    }
-                }
-            }
-            printSolution(dist);
-        }
-
-        public static void main(String[] args) {
-            int[][] graph = new int[][] {
-                {0, 4, 0, 0, 0, 0, 0, 8, 0},
-                {4, 0, 8, 0, 0, 0, 0, 11, 0},
-                {0, 8, 0, 7, 0, 4, 0, 0, 2},
-                {0, 0, 7, 0, 9, 14, 0, 0, 0},
-                {0, 0, 0, 9, 0, 10, 0, 0, 0},
-                {0, 0, 4, 14, 10, 0, 2, 0, 0},
-                {0, 0, 0, 0, 0, 2, 0, 1, 6},
-                {8, 11, 0, 0, 0, 0, 1, 0, 7},
-                {0, 0, 2, 0, 0, 0, 6, 7, 0}
-            };
-
-            DijkstraAlgorithm dijkstra = new DijkstraAlgorithm();
-            dijkstra.dijkstra(graph, 0);
-        }
+      public static void main(String[] args) {
+        int graph[][] = new int[][] { { 0, 0, 1, 2, 0, 0, 0, 0 }, { 0, 0, 2, 0, 0, 3, 0, 0 }, { 1, 2, 0, 1, 3, 0, 0, 0 },
+            { 2, 0, 1, 0, 0, 0, 1, 0}, { 0, 0, 3, 0, 0, 2, 0, 5 }, { 0, 3, 0, 0, 2, 0, 1, 0 }, { 0, 0, 0, 1, 0, 1, 0, 0 } ,
+            { 0, 0, 0, 0, 5, 0, 0, 0 }
+        };
+        Dijkstra T = new Dijkstra();
+        T.dijkstra(graph, 0);
+      }
     }
 
 ## Conclusion
