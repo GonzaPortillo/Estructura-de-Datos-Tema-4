@@ -5,7 +5,7 @@
 2. [Investigacion](https://github.com/GonzaPortillo/Estructura-de-Datos-Tema-4/blob/main/README.md#investigacion)
     * [Arboles](https://github.com/GonzaPortillo/Estructura-de-Datos-Tema-4/blob/main/README.md#arboles)
     * [Grafos](https://github.com/GonzaPortillo/Estructura-de-Datos-Tema-4/blob/main/README.md#grafos)
-3. [Implementacion en Java](https://github.com/GonzaPortillo/Estructura-de-Datos-Tema-4/blob/main/README.md#codigos-en-java)
+3. [Implementacion en Java](https://github.com/GonzaPortillo/Estructura-de-Datos-Tema-4/blob/main/README.md#implementación-en-java)
     * [Arboles](https://github.com/GonzaPortillo/Estructura-de-Datos-Tema-4/edit/main/README.md#arboles-1)
     * [Grafos (Algoritmo de Dijkstra)](https://github.com/GonzaPortillo/Estructura-de-Datos-Tema-4/edit/main/README.md#grafos-algoritmo-de-dijkstra)
 4. [Conclusión](https://github.com/GonzaPortillo/Estructura-de-Datos-Tema-4/edit/main/README.md#conclusion)
