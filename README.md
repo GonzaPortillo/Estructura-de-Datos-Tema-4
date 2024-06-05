@@ -3,8 +3,12 @@
 ## Indice 
 1. [Introduccion](https://github.com/GonzaPortillo/Estructura-de-Datos-Tema-4?tab=readme-ov-file#introduccion)
 2. [Investigacion](https://github.com/GonzaPortillo/Estructura-de-Datos-Tema-4/blob/main/README.md#investigacion)
-3. [Codigos en Java
-4. [Conclusión
+    * [Arboles](https://github.com/GonzaPortillo/Estructura-de-Datos-Tema-4/edit/main/README.md#arboles)
+    * [Grafos](https://github.com/GonzaPortillo/Estructura-de-Datos-Tema-4/edit/main/README.md#grafos)
+3. [Implementacion en Java](https://github.com/GonzaPortillo/Estructura-de-Datos-Tema-4/blob/main/README.md#codigos-en-java)
+    * [Arboles](https://github.com/GonzaPortillo/Estructura-de-Datos-Tema-4/edit/main/README.md#arboles-1)
+    * [Grafos (Algoritmo de Dijkstra)](https://github.com/GonzaPortillo/Estructura-de-Datos-Tema-4/edit/main/README.md#grafos-algoritmo-de-dijkstra)
+4. [Conclusión](https://github.com/GonzaPortillo/Estructura-de-Datos-Tema-4/edit/main/README.md#conclusion)
 
 ## Introduccion
 En el campo de las estructuras de datos, los árboles y los grafos son dos conceptos fundamentales que permiten organizar y representar relaciones entre datos de manera eficiente y flexible. Estas estructuras juegan un papel crucial en una amplia gama de aplicaciones informáticas, desde la organización de datos en bases de datos hasta la representación de redes complejas en sistemas de transporte. Los árboles son estructuras jerárquicas que consisten en nodos interconectados de una manera específica. Cada nodo en un árbol tiene un padre (excepto el nodo raíz) y cero o más hijos. Los árboles se utilizan comúnmente para representar relaciones de jerarquía, como la estructura de un sistema de archivos o la organización de elementos en un árbol genealógico. Además, los árboles binarios, donde cada nodo tiene como máximo dos hijos, son especialmente importantes en algoritmos de búsqueda y ordenación. 
@@ -39,7 +43,7 @@ Operaciones básicas:
 * Obtener los vecinos de un nodo: Devuelve una lista de nodos adyacentes a un nodo específico en el grafo. En un grafo dirigido, esto puede incluir los nodos que son sucesores o predecesores del nodo.
 * Recorrer el grafo: Permite visitar todos los nodos y aristas del grafo, ya sea en profundidad (DFS) o en anchura (BFS), con el fin de realizar tareas como búsqueda de caminos, análisis de componentes conectados, etc.
 
-## Codigos en Java
+## Implementación en Java
 
 ### Arboles 
 
