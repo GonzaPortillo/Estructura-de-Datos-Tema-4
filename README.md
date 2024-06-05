@@ -2,7 +2,7 @@
 
 ## Indice 
 1. [Introduccion](https://github.com/GonzaPortillo/Estructura-de-Datos-Tema-4?tab=readme-ov-file#introduccion)
-2. [Investigacion
+2. [Investigacion](https://github.com/GonzaPortillo/Estructura-de-Datos-Tema-4/blob/main/README.md#investigacion)
 3. [Codigos en Java
 4. [Conclusión
 
